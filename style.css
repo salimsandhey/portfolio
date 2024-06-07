@@ -13,6 +13,9 @@ html {
     padding-top: 1.5rem;
     position: sticky;
 }
+.navbar i{
+    display: none;
+}
 .nav-links a{
     text-decoration: none;
     color: lightgray;
@@ -35,7 +38,7 @@ html {
     display: flex;
 }
 .home img{
-    height: 500px;
+    height: 80vh;
     margin-left: 8rem;
     margin-top: 1rem;
     margin-right: 1rem;
@@ -43,6 +46,7 @@ html {
 .home .info{
     margin-top: 9rem;
     margin-left: 4rem;
+    flex: 0.5;
 }
 .home .info h4{
     font-family: 'Poppins', sans-serif;
@@ -155,7 +159,7 @@ html {
     border-bottom: 1px solid white;
     padding: 10px;
     font-size: 14px;
-    width: 400px;
+    width: 100%;
     font-family: 'Poppins', sans-serif;
     color: white;
     margin-top: 20px;
@@ -176,7 +180,7 @@ html {
     background-color: transparent;
     resize: none;
     height: 100px;
-    width: 400px;
+    width: 100%;
     border: none;
     border-bottom: 1px solid white;
     margin-top: 10px;
@@ -255,4 +259,131 @@ html {
 .heart{
     color: red;
     font-size: 16px;
+}
+@media only screen and (max-width: 40em){
+    .navbar .nav-links{
+        display: none;
+    }
+    .navbar i{
+        color: lightgray;
+        font-size: 35px;
+        margin-right: 20px;
+        display: block;
+    }
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
+    .image{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .image img{
+        height: 40vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+    .home .info{
+        margin: 25px;
+        margin-top: 0;
+    }
+    .home .info p{
+        width: 100%;
+    }
+    .skills{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .skills .text{
+        width: 90%;
+    }
+    .skills .all-skills{
+        width: 90%;
+    }
+    .all-skills .skill{
+        height: 135px;
+    }
+    .all-skills .skill i{
+        font-size: 70px;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about .details{
+        width: 95vw
+    }
+    .about .image{
+        display: none;
+    }
+    .contact-div{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+        padding: 20px;
+    }
+    .contact .contact-form{
+        flex: 0.5;
+        width: 90%;
+        padding: 0;
+    }
+    .contact .personal{
+        flex: 0.5;
+        padding: 0;
+        width: 100%;
+    }
+    .contact .personal div{
+        display: flex;
+        width: 100%;
+        margin: 0;
+    }
+    .contact .personal div h3{
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+    .contact .personal div p{
+        width: 90%;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .btn{
+        margin-bottom: 20px;
+    }
+    .contact .personal .socials{
+        display: flex;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact .personal .socials i{
+        margin: 10px;
+    }
+    .socials a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
 }
