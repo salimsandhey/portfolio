@@ -90,11 +90,13 @@
       <h2 class="yellow">Contact Me</h2>
       <div class="contact-div">
         <div class="contact-form">
-          <form action="">
-            <input type="text" name="fullName" placeholder="Full Name"><br>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="redirect" value="https://salimsandhey.netlify.app/">
+            <input type="hidden" name="access_key" value="421c66b8-baf6-4a5b-802e-4f5ebb985bdc">
+            <input type="text" name="fullName" placeholder="Full Name" required><br>
             <input type="email" name="email" placeholder="Email" required><br>
             <textarea name="message" placeholder="Message"></textarea><br>
-            <button class="btn">Submit</button>
+            <button class="btn" type="submit">Submit</button>
           </form>
         </div>
         <div class="personal">
