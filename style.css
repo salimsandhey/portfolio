@@ -46,7 +46,6 @@ html {
 .home .info{
     margin-top: 9rem;
     margin-left: 4rem;
-    flex: 0.5;
 }
 .home .info h4{
     font-family: 'Poppins', sans-serif;
@@ -263,6 +262,36 @@ html {
 @media only screen and (max-width: 40em){
     .navbar .nav-links{
         display: none;
+        flex-direction: column;
+        gap: 40px;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-100%);
+        opacity: 0;
+        z-index: 1000;
+    }
+    .navbar .nav-links.open {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .navbar .nav-links a{
+        margin: 0;
+    }
+    .navbar .close-mobile-nav{
+        display: none;
+    }
+    .mobile-nav{
+        display: none;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+
     }
     .navbar i{
         color: lightgray;
@@ -355,11 +384,13 @@ html {
         display: flex;
         align-items: center;
         margin: 0;
+        font-size: 12px;
     }
     .contact .personal div p{
         width: 90%;
         align-items: center;
         margin-top: 10px;
+        font-size: 12px;
     }
     .btn{
         margin-bottom: 20px;
